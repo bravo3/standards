@@ -52,11 +52,11 @@ General
 * All libraries and projects must have dependencies controlled via Composer
 * Composer should define a PSR-0 autoloader to include `src/` and `tests/`
 
-
-    "autoload": {
-        "psr-0": { "": ["src/", "tests/"] }
-    },
-
+```
+"autoload": {
+    "psr-0": { "": ["src/", "tests/"] }
+},
+```
 
 ### Project structure
 
@@ -148,21 +148,24 @@ Code Requirements
 * Enumerations should extend the `eloquent/enumeration` package
 
 
-    use Eloquent\Enumeration\AbstractEnumeration;
+```php
+use Eloquent\Enumeration\AbstractEnumeration;
 
-    /**
-     * @method static HttpRequestMethod GET()
-     * @method static HttpRequestMethod POST()
-     * @method static HttpRequestMethod PUT()
-     * @method static HttpRequestMethod DELETE()
-     */
-    final class HttpRequestMethod extends AbstractEnumeration
-    {
-        const GET = 'GET';
-        const POST = 'POST';
-        const PUT = 'PUT';
-        const DELETE = 'DELETE';
-    }
+/**
+ * @method static HttpRequestMethod GET()
+ * @method static HttpRequestMethod POST()
+ * @method static HttpRequestMethod PUT()
+ * @method static HttpRequestMethod DELETE()
+ */
+final class HttpRequestMethod extends AbstractEnumeration
+{
+    const GET = 'GET';
+    const POST = 'POST';
+    const PUT = 'PUT';
+    const DELETE = 'DELETE';
+}
+```
+
 
 ### Logging
 
