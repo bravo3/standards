@@ -181,7 +181,7 @@ final class HttpRequestMethod extends AbstractEnumeration
 ### Collections
 
 * When returning a collection of objects, your method should return a `\Traversable` object instead of an array
-* This can be quickly implemented using the ArrayIterator class, see [SampleItemCollection.php](docs\SampleItemCollection.php)
+* This can be quickly implemented using the ArrayIterator class, see [SampleItemCollection.php](docs/SampleItemCollection.php)
 
 
 ### Principles
